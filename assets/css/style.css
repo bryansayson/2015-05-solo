@@ -55,8 +55,9 @@
   font-family: 'Montserrat', sans-serif;
   margin: 0px auto;
   margin-top: 20px;
-  width: 300px;
+  width: 200px;
   display: block;
+  text-align: center;
 }
 
 @keyframes blink-empty {
