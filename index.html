@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="app">
+<head>
+  <meta charset="UTF-8">
+  <title> Words. </title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/flipclock.css">
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <script src="angular.js"> </script>
+  <script src="app.js"> </script>
+  <script src="jquery.js"> </script>
+  <script src="underscore.js"> </script>
+  <script src="util.js"> </script>
+  <script src="clock.js"> </script>
+  <script src="randomstring.js"> </script>
+  <script src="assets/js/flipclock.js"> </script>
+</head>
+<body>
+  <span class="game-title">  <span class="word-count"> </span> Words.  <span class="score"> </span> </span>
+  <span class="game-instructions"> Given the string of random characters below, construct as many words as you can! </span>
+  <div class="clock"> </div>
+  <div class="random-letters-container">
+    <span class="randomletters"> </span>
+  </div>
+  <div class="inputs" ng-controller="WordController">
+    <form>
+    <input type="text" class="word-input" placeholder="Insert Words Here!" ng-model="newWord">
+    <button class="wordSubmit" ng-click="addWords(newWord)" id="submitButton"> submit </button>
+    </form>
+  </div>
+  <div class="words" ng-controller="WordController">
+    <li ng-repeat="word in words" ng-animate="'animate">
+    <span> {{ word }} </span>
+    </li>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+.game-title {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+}
+
+.game-instructions {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+}
+
+.randomletters {
+  text-align: center;
+  font-size: 70px;
+  font-family: 'scramble', sans-serif;
+  display: block;
+}
+
+.random-letters-container {
+  width: 700px;
+  margin: 0px auto;
+  margin-top: 30px;
+  display: block;
+}
+
+.inputs {
+  width: 325px;
+  margin: 0px auto;
+}
+
+.word-input {
+  width:300px;
+  height:75px;
+  margin-top: 20px;
+  margin-bottom: 20px
+  margin: 0px auto;
+  display: block;
+  animation: blink-empty 1s infinite;
+  border:none;
+  border-left: transparent solid 1px;
+  font-size: 35px;
+}
+
+.wordSubmit {
+  width:50px;
+  display:block;
+  margin:0px auto;
+}
+
+.words {
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0px auto;
+  margin-top: 20px;
+  width: 300px;
+  display: block;
+}
+
+@keyframes blink-empty {
+  50% {border-left: 1px solid #333;}
+}
+
+.clock {
+  margin: 0px auto;
+  margin-top: 10px;
+  display: block;
+}
+
+.score {
+  display: block;
+  text-align: center;
+}
