@@ -17,7 +17,7 @@ autoStart: false,
 });
 		    
 
-clock.setTime(000005);
+clock.setTime(000200);
 // clock.setTime(000200);
 clock.setCountdown(true);
 clock.start();
